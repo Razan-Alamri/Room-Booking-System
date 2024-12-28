@@ -1,0 +1,23 @@
+ADD_ROOM
+3
+106 1 40 Available
+212 2 22 Reserved
+111 1 36 Available
+ADD_EVENT
+3
+Cyber_Security workshop 969656400000 12:15 1:45 39
+Collage_councel meeting 635720400000 2:15 3:25 12
+Data_Science class 982962000000 12:35 1:45 25
+ADD_STAFF
+2
+12132 Abeer Alsalem 1989 2014 IT Programmer
+10561 Layla Alali 1981 2011 HR Officer
+ADD_FACILTY
+1
+21861 Asma Kamel 1979 2008 CS Lecturer 
+BOOKING
+3
+111 Cyber_Security 12132
+106 Data_Science 21861
+212 Collage_councel 10561
+Quit

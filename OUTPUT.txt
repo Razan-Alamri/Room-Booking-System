@@ -1,0 +1,29 @@
+
+Welcome to the Room Booking System!
+
+
+Command: Room with 106 was added successfully
+Command: Room with 212 was added successfully
+Command: Room with 111 was added successfully
+
+--------------------------------------------------------------------
+
+Command: Event Cyber_Security was added successfully
+Command: Event Collage_councel was added successfully
+Command: Event Data_Science was added successfully
+
+------------------------------------------------------------------------------------------------------
+
+Command: Staff Employee with ID 12132 was added successfully
+Command: Staff Employee with ID 10561 was added successfully
+
+------------------------------------------------------------------------------------------------------
+
+Command: Faculty Employee with ID 21861 was added successfully
+
+------------------------------------------------------------------------------------------------------
+
+Unsuccessful Booking 
+Employee with ID 12132 is not a Staff Employee
+
+Thank you for using the Room Booking System, Good Bye!
