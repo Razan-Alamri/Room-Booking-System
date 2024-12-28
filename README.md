@@ -1,35 +1,39 @@
-# Vehicle Service System
+# Room Booking System
 
 ## Assignment
 
-In this project, you are required to develop a Vehicle Service System, which handles vehicle rentals and sales. The system includes various features like class inheritance, polymorphism, and File I/O operations.
+The Room Booking System is designed to manage room bookings for events such as workshops, meetings, and extra classes. It handles booking requests submitted by faculty and staff, ensuring a streamlined booking process and report generation.
 
 ### Assignment PDF
-- You can find the detailed assignment in the uploaded PDF file: [Assignment.pdf](Assignment.pdf).
+- You can find the detailed assignment in the uploaded PDF file: [Room Booking System Assignment.pdf](Room Booking System Assignment.pdf).
 
 ## Objectives
-- Practice class inheritance and polymorphism.
-- Learn how to use and implement abstract classes and interfaces.
-- Learn to use File I/O (Reading/Writing from/to files).
+- Ensure proper management of room bookings for various events. 
+- Implement error handling for missing files and invalid requests.
+- Generate detailed reports of bookings for specific rooms and events.
 
 ## Files Provided with Assignment
 - **Input file samples**:
-  - `input.txt`: Contains all customers and vehicle details that need to be registered into the system. Also includes commands to generate vehicle services (sale or rental).
+  - `INPUT.txt`: Contains all room booking requests, including room details, event type, and time slots.
   
 - **Output files**:
-  - `output.txt`: Displays all registered records for customers, rental, and sale vehicles.
+  - `OUTPUT.txt`: Displays all processed booking requests and generated reports.
 
 ## System Description
-This project is related to vehicle service agents by developing a computerized mechanism for selling and renting different kinds of vehicles. This will help in reducing manual and paperwork and therefore expected to enhance the overall service experience both for the customers and the agents. The vehicle service system provides different vehicle types for sale or rent.
+The Room Booking System automates the process of booking rooms within the university, making it efficient and reducing manual errors. Faculty and staff can submit booking requests through the system, and the system processes these requests into detailed reports.
 
-The system you are required to develop is called Vehicle Store System. At the initial stage, the system will register all the available vehicle information either for renting or sale, and the customers’ details from `input.txt`. Information read from `input.txt` is written with all the details into an output file, called `output.txt`.
+The system reads booking requests from `INPUT.txt` and generates corresponding reports in `OUTPUT.txt`, including room details, event types, and booked times.
 
-After populating the data, the system will be ready for serving customers according to available vehicles. For a rent service, the customer ID and vehicle license details are read from `input.txt`. After processing the service, fare will be calculated and the details are written to the output file `output.txt`.
+### Commands and Features:
+- **Read Input File**: Ensures that `INPUT.txt` exists and processes its contents.
+- **Generate Reports**: Creates an output file (`OUTPUT.txt`) with reports based on the booking requests.
+- **Error Handling**: Displays an error message when the input file does not exist.
 
-For a more detailed description of the system and commands, please follow the steps which will explain how to develop the system.
+---
 
 ## Instructions
-1. Install necessary libraries.
-2. Implement classes and interfaces.
-3. Write data handling functions for reading/writing to files.
-4. Test and debug the system.
+1. Ensure necessary libraries are installed.
+2. Implement classes and interfaces for booking management.
+3. Write functions for handling file I/O operations.
+4. Debug and test the system thoroughly.
+
