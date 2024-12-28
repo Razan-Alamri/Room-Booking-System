@@ -1,4 +1,8 @@
-Instructions
+Vehicle Service System
+Assignment 3
+CPCS203 Programming-II - Term – Spring 2021
+Assigned Date: 28/03/2021
+Delivery Date: 15/04/2021 @ 11:00 PMInstructions
 § This program must ONLY be submitted on the Blackboard.
 § This project worth 10% of the overall module marks (100%).
 § NO assignment will be accepted after 11:59 pm for any reason.
@@ -19,17 +23,16 @@ input.txt: which contains all customers and vehicle details that needs to be
 registered into the system. It also contains all the commands to generate
 vehicle services (sale or rental). These commands are read from the file and
 processed by the system.
-Output files:
-•
+• Output files:
 output.txt: This output file displays all the registered record for the
 customers, rental and sale vehicles.
 Note: Please check the format of each of these files and make
 sure you follow this format in your assignment solution.System Description
 This project is related to vehicle service agents by developing a computerized
-mechanism for selling and renting different kind of vehicles. This will help in reducing
-manual and paperwork and therefore expected to enhance the overall service
-experience both for the customers and the agents. The vehicle service system
-provides different vehicle types for sale or rent.
+mechanism for selling and renting different kind of vehicles. This will help in
+reducing manual and paperwork and therefore expected to enhance the overall
+service experience both for the customers and the agents. The vehicle service
+system provides different vehicle types for sale or rent.
 The system you are required to develop is called Vehicle Store System. At the
 initial stage, the system will register all the available vehicle information either for
 renting or sale, and the customers’ details from input.txt. Information read from
@@ -50,7 +53,8 @@ describe the format of each command.
 This command is used to add all information of a customer. This includes customer
 id, name, nationality, gender (M or F) and phone number. Check the following
 example and table.
-Command Example Add_Customer_Record 20005 Meshal_ALi Saudi M 50123456Field name Type Example
+Command Example
+Add_Customer_Record 20005 Meshal_ALi Saudi M 50123456Field name Type Example
 id int 20005
 name String Meshal_ALi
 natioanlity String Saudi
@@ -77,14 +81,13 @@ Make String Nissan
 Model String Sunny
 Price double 45000.00
 Discount rate double 5Step 2: Process Services
-The services details are provided in input.txt followed by the commands used to
-fill
+The services details are provided in input.txt followed by the commands used to fill
 in the vehicles and customers arrays. More detailed description of booking process
 has been explained in the following subsections:
 2.1 Command: Ass_Customer_to_Rent
-This command is used to assign customer to a rented vehicle. The command contains
-the necessary information such as the customer id, the vehicle license number and
-the number of days to rent the vehicle.
+This command is used to assign customer to a rented vehicle. The command
+contains the necessary information such as the customer id, the vehicle license
+number and the number of days to rent the vehicle.
 Command Example
 Ass_Customer_to_Rent GH7000 20007 7
 Field name Type Example
@@ -93,8 +96,7 @@ Customer id int 20007
 Number od days int 7
 Consider the following notes when issuing a service:
 Important Notes
-•
-The system will read the license number as a string. You need to search for the vehicle
+• The system will read the license number as a string. You need to search for the vehicle
 object associated with the given license number.
 • The system will read the customer id as integer. You need to search for the customer
 object associated with the given id.
@@ -113,10 +115,10 @@ Command Example
 Print_Rental: use the overridden toString method to print all information about the vehicles
 for rent with records of all customers rented that vehicle if any.1.2 UML Class Diagram
 In addition to the main class, you should create all classes as shown in the following
-UML diagram. Note that you should write appropriate constructor, setter, and getter
-methods for all classes. (You don’t need to follow the same given arguments). Be
-aware of the visibility (public-private) for each attribute/method and the use of
-abstract classes and interfaces.
+UML diagram. Note that you should write appropriate constructor, setter, and
+getter methods for all classes. (You don’t need to follow the same given
+arguments). Be aware of the visibility (public-private) for each attribute/method
+and the use of abstract classes and interfaces.
 Customer
 (interface) - id:int
 Comparable - name: String
@@ -127,21 +129,19 @@ Comparable - name: String
 +Customer (id, name, nationality, gender, phone)
 Vehicle
 +getName (): String
-#licwnse_number:String #make:String
+#licwnse_number:String
 +setName (name:String) : void
-#model:String #price:double
+#make:String
 +getId (): int
-+Vehicle (license_number, make, model, price) +setId (id: int) : void
+#model:String
++setId (id: int) : void
+#price:double
 +getNationality (): String
-+getVehicleName(): String
-+setNationality (nationality: String): void
-+getLicenseNumber(): String
-+getGender() : Char
-+calcPrice(): double
-+setGender (gender: Char) : void
-+toString(): String
-+getRentalDays() : int
-+setRentalDays (rentalDays:int) void
++Vehicle (license_number, make, model, price) +setNationality (nationality: String): void
++getVehicleName(): String +getGender() : Char
++getLicenseNumber(): String +setGender (gender: Char) : void
++calcPrice(): double +getRentalDays() : int
++toString(): String +setRentalDays (rentalDays:int) void
 +getPhone () : int
 +setPhone (phone:int) :void
 +toString(): String
@@ -152,10 +152,14 @@ Sale Rental
 - rate:double # rentedTo: Customer[]
 # currentCustomerNo: int
 + Sale (license_number, make, model, price,
+rate)
 + Rental (license_number, make, model, price, rpd, max)
-rate) + addCustomer (c: Customer, numOfDays:int): void
-+ calcPrice(): double + getCustomer() : Customer[]
-+ toString(): String + getCurrentCustomerNo() : intImportant Notes:
++ calcPrice(): double
++ addCustomer (c: Customer, numOfDays:int): void
++ toString(): String
++ getCustomer() : Customer[]
++ getCurrentCustomerNo() : int
++ toString(): StringImportant Notes:
 • Use of class & object, arrays of Object, and passing object to method
 • Use of Files, Reading/Writing from/on files
 • Your program output must be exactly same as given sample output files.
