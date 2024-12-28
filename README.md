@@ -5,7 +5,7 @@
 The Room Booking System is designed to manage room bookings for events such as workshops, meetings, and extra classes. It handles booking requests submitted by faculty and staff, ensuring a streamlined booking process and report generation.
 
 ### Assignment PDF
-- You can find the detailed assignment in the uploaded PDF file: [Assignment.pdf](Assignment.pdf).
+- You can find the detailed assignment in the uploaded PDF file: 
 
 ## Objectives
 - Ensure proper management of room bookings for various events. 
